@@ -1,0 +1,92 @@
+.header-wrapper {
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px;
+  padding: 0 8px;
+
+  &__delivery {
+    display: none;
+
+    &--mobile {
+      display: flex;
+      margin: 0;
+      padding: 0 10px;
+    }
+
+    &__location {
+      border: 1px solid #e0e0e0;
+      border-radius: 2px;
+      display: inline-block;
+
+      &__input {
+        height: 38px;
+        background: url("../images/icons/location.svg") no-repeat 12px 12px;
+        padding: 0 36px;
+        border: none;
+        outline: none;
+      }
+    }
+
+    &__input:focus {
+      border: 1px solid #57ad56;
+    }
+
+    &__to {
+      margin: 0;
+      font-size: $fz-xs;
+      line-height: $lh-sm;
+      color: $color-text-secondary;
+      margin-bottom: 8px;
+
+      @media only screen and (min-width: 750px) {
+        margin: 0 9px;
+        font-size: $fz-sm;
+        line-height: $lh-md;
+      }
+    }
+
+    &__when {
+      font-size: $fz-xs;
+      line-height: $lh-sm;
+      color: $color-text-secondary;
+      margin-bottom: 8px;
+    }
+
+    &__time {
+      height: 40px;
+      width: 65px;
+      border: 1px solid #e0e0e0;
+      border-radius: 2px;
+      text-align: center;
+      outline: none;
+      margin-right: 16px;
+
+      @media only screen and (min-width: 750px) {
+        margin-right: 0;
+      }
+    }
+
+    @media only screen and (min-width: 750px) {
+      display: flex;
+      align-items: center;
+
+      &--mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    padding: 0;
+  }
+}

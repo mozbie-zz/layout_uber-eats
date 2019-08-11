@@ -1,0 +1,32 @@
+.search {
+  flex-basis: 100%;
+  color: $color-text-secondary;
+  margin: 40px 0;
+  padding: 0 10px;
+
+  &-field {
+    background: url("../../images/icons/search.svg") no-repeat 0 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 30px;
+    font-size: $fz-sm;
+    line-height: $lh-xl;
+    width: 100%;
+    outline: none;
+
+    @media only screen and (min-width: 750px) {
+      font-size: $fz-lg;
+    }
+  }
+
+  &-field:focus {
+    border-bottom: 1px solid $color-secondary;
+    &::placeholder {
+      color: $color-secondary;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    padding: 0;
+  }
+}
