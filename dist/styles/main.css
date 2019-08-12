@@ -124,7 +124,7 @@ h1 {
       padding: 8px 0; } }
 
 .buttons__basket {
-  background: url("../../images/icons/basket.svg") no-repeat;
+  background: url("../images/icons/basket.svg") no-repeat;
   display: none;
   height: 24px;
   width: 20px;
@@ -158,7 +158,7 @@ h1 {
   margin: 40px 0;
   padding: 0 10px; }
   .search-field {
-    background: url("../../images/icons/search.svg") no-repeat 0 15px;
+    background: url("../images/icons/search.svg") no-repeat 0 15px;
     border: none;
     border-bottom: 1px solid #ccc;
     padding: 15px 30px;
@@ -273,7 +273,7 @@ h1 {
 
 .lang {
   width: 170px;
-  background: url("../../images/globe.svg") no-repeat 16px 12px;
+  background: url("../images/globe.svg") no-repeat 16px 12px;
   background-color: #3b3b3b;
   margin-bottom: 33px; }
   .lang__select {
@@ -287,7 +287,7 @@ h1 {
     color: #fff;
     text-transform: uppercase;
     width: 120px;
-    background: url(../../images/arrow.png) no-repeat 8px 14px;
+    background: url("../images/arrow.png") no-repeat 8px 14px;
     background-position: right 0.7em top 50%, 0 0;
     background-color: #3b3b3b; }
     @media only screen and (min-width: 1024px) {
