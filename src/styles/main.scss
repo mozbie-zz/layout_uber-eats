@@ -2,6 +2,46 @@
 @import "fonts";
 @import "typography";
 
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/search";
+@import "blocks/catalog";
+@import "blocks/card";
+@import "blocks/footer";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: $c-gray;
+  font-family: $default-ff;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.heading {
+  margin: 40px 0 14px;
+  font-size: $fz-xl;
+  line-height: $lh-heading;
+  padding: 0 10px;
+  color: $color-text-primary;
+  font-weight: $fw-normal;
+
+  @media only screen and (min-width: 1000px) {
+    padding: 0;
+    margin: 16px 0;
+  }
+}
+
+.divider {
+  width: 100%;
+  margin: 40px 0;
+  height: 1px;
+  background: $color-white;
+  opacity: 0.4;
 }

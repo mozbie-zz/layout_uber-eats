@@ -1,0 +1,75 @@
+.buttons {
+  &__button {
+    text-decoration: none;
+    width: 72px;
+    height: 40px;
+    border-radius: 2px;
+    margin-left: 12px;
+    padding: 13px 0;
+    text-align: center;
+    line-height: $lh-sm;
+    font-size: $fz-xs;
+    color: $color-text-primary;
+    transition: all 0.3s ease;
+    font-weight: 500;
+
+    &--light {
+      border: 1px solid $color-primary-bright;
+
+      &:hover {
+        color: $color-secondary;
+        border: 1px solid $color-secondary;
+      }
+    }
+
+    &--dark {
+      color: #fff;
+      background-color: $color-primary;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+
+    @media only screen and (min-width: 640px) {
+      width: 80px;
+      margin-left: 16px;
+      line-height: $lh-xl;
+      font-size: $fz-sm;
+      padding: 8px 0;
+    }
+  }
+
+  &__basket {
+    background: url("../images/icons/basket.svg") no-repeat;
+    display: none;
+    height: 24px;
+    width: 20px;
+    margin-left: 27px;
+
+    @media only screen and (min-width: 640px) {
+      display: block;
+    }
+  }
+}
+
+.scroll_top {
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  width: 64px;
+  height: 64px;
+  background: $color-secondary url("../images/arrow-up.png") 50% 50% no-repeat;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+  &:hover {
+    background-color: $color-secondary-dark;
+  }
+
+  @media only screen and (min-width: 640px) {
+    width: 80px;
+    height: 80px;
+  }
+}
